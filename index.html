@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <div id="inputTextDiv">
+    </div>
+    <div class="wrapper">
+      <div class="emptyDiv"></div>
+      <div class="iconDiv">
+        <img src="Icons/Set 01 (minimal)/Tracking.png" alt="Tracking" class="icons" style="margin-top:15px!important;"><br>
+        <img src="Icons/Set 02/Line Height.png" alt="Line Height" class="icons"><br>
+        <img src="Icons/Set 02/Font Size.png" alt="Font Size" class="icons">
+      </div>
+      <div class="iconDiv02">
+        <img src="Icons/Set 02/Opacity.png" alt="Opacity" class="icons" style="padding-top:15px;"><br>
+        <img src="Icons/Set 02/Colour.png" alt="Colour" class="icons"/></button>
+      </div>
+      <div class="sliderDiv">
+        <input class="slider" id="fontTracking" type="range" min="2" max="20" value="10" style="margin-top: 45px;"/> <br>
+        <input class="slider" id="lineHeight" type="range" min="2" max="30" value="13"/> <br>
+        <input class="slider" id="fontSize" type="range" min="5" max="300" value="20" style="margin-top:20px!important; margin-bottom:0px!important;"/>
+      </div>
+      <!-- <div class="empty02"></div> -->
+      <div class="sliderDiv02">
+        <input class="slider" id="fontOpacity" type="range" min="0" max="255" value="150" style="margin-top:55px!important;"/> <br>
+        <input class="slider" id="colourSelect" type="range" min="0" max="1" value="0" style="width: 20%; margin-top: 20px!important; margin-bottom: 0px!important;"/>
+      </div>
+      <div id="myCanvas01" class="canvasDiv">
+      </div>
+      <div class="mediaDiv" id="videoInputButtonID" style="border-top: 0.5px solid; color: rgb(150, 150, 150);">
+      <button id="camera" class="cameraClass">Camera</button>
+      </div>
+      <div class="footerDiv">
+      </div>
+    </div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
